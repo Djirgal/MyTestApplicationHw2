@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="button_number">30</dimen>
+    <dimen name="button_text">20</dimen>
+    <dimen name="margin_button">15</dimen>
+    <dimen name="vert_bias">0.5</dimen>
+</resources>
