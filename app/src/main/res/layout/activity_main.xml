@@ -4,6 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/background_short"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"/>
 
     <Button
         android:id="@+id/button1"
