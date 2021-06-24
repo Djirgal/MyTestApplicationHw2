@@ -5,12 +5,25 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background_short">
-<!--    <ImageView
+    <!--    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/background_short"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"/>-->
+    <TextView
+        android:id="@+id/textRes"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:srcCompat="@drawable/background_short"
-        android:adjustViewBounds="true"
-        android:scaleType="fitXY"/>-->
+        android:layout_height="wrap_content"
+        android:background="@color/purple_700"
+        android:textColor="@color/white"
+        android:gravity="end"
+        android:textSize="@dimen/result_text"
+        app:layout_constraintBottom_toTopOf="@id/button2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="@dimen/vert_bias" />
 
     <Button
         android:id="@+id/button1"
@@ -24,7 +37,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="@dimen/vert_bias"
-        app:layout_constraintVertical_chainStyle="packed"/>
+        app:layout_constraintVertical_chainStyle="packed" />
 
     <Button
         android:id="@+id/button4"
@@ -45,10 +58,10 @@
         android:layout_margin="@dimen/margin_button"
         android:text="@string/_7"
         android:textSize="@dimen/button_text"
-        app:layout_constraintTop_toBottomOf="@id/button4"
+        app:layout_constraintBottom_toTopOf="@id/del"
         app:layout_constraintEnd_toStartOf="@id/button8"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/del"/>
+        app:layout_constraintTop_toBottomOf="@id/button4" />
 
     <Button
         android:id="@+id/del"
@@ -99,6 +112,7 @@
         app:layout_constraintEnd_toStartOf="@id/button9"
         app:layout_constraintStart_toEndOf="@id/button7"
         app:layout_constraintTop_toBottomOf="@id/button5" />
+
     <Button
         android:id="@+id/button0"
         android:layout_width="wrap_content"
@@ -106,12 +120,12 @@
         android:layout_margin="@dimen/margin_button"
         android:text="@string/_0"
         android:textSize="@dimen/button_text"
-        app:layout_constraintTop_toBottomOf="@id/button8"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@id/buttonPoint"
-        app:layout_constraintStart_toEndOf="@id/del"/>
+        app:layout_constraintStart_toEndOf="@id/del"
+        app:layout_constraintTop_toBottomOf="@id/button8" />
 
-     <Button
+    <Button
         android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -122,8 +136,8 @@
         app:layout_constraintEnd_toStartOf="@id/plus"
         app:layout_constraintStart_toEndOf="@id/button2"
         app:layout_constraintTop_toTopOf="parent"
-         app:layout_constraintVertical_bias="@dimen/vert_bias"
-        app:layout_constraintVertical_chainStyle="packed"/>
+        app:layout_constraintVertical_bias="@dimen/vert_bias"
+        app:layout_constraintVertical_chainStyle="packed" />
 
     <Button
         android:id="@+id/button6"
@@ -146,8 +160,8 @@
         android:textSize="@dimen/button_text"
         app:layout_constraintBottom_toTopOf="@id/buttonPoint"
         app:layout_constraintEnd_toStartOf="@id/multiply"
-        app:layout_constraintTop_toBottomOf="@id/button6"
-        app:layout_constraintStart_toEndOf="@id/button8"/>
+        app:layout_constraintStart_toEndOf="@id/button8"
+        app:layout_constraintTop_toBottomOf="@id/button6" />
 
 
     <Button
@@ -160,7 +174,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@id/divide"
         app:layout_constraintStart_toEndOf="@id/button0"
-        app:layout_constraintTop_toBottomOf="@id/button9"/>
+        app:layout_constraintTop_toBottomOf="@id/button9" />
 
     <Button
         android:id="@+id/plus"
@@ -174,7 +188,7 @@
         app:layout_constraintStart_toEndOf="@id/button3"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="@dimen/vert_bias"
-        app:layout_constraintVertical_chainStyle="packed"/>
+        app:layout_constraintVertical_chainStyle="packed" />
 
     <Button
         android:id="@+id/minus"
@@ -183,11 +197,10 @@
         android:layout_margin="@dimen/margin_button"
         android:text="@string/minus"
         android:textSize="@dimen/button_text"
-        app:layout_constraintTop_toBottomOf="@id/plus"
         app:layout_constraintBottom_toTopOf="@id/multiply"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/button6"
-         />
+        app:layout_constraintTop_toBottomOf="@id/plus" />
 
     <Button
         android:id="@+id/multiply"
@@ -198,8 +211,8 @@
         android:textSize="@dimen/button_text"
         app:layout_constraintBottom_toTopOf="@id/divide"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/minus"
-        app:layout_constraintStart_toEndOf="@id/button9"/>
+        app:layout_constraintStart_toEndOf="@id/button9"
+        app:layout_constraintTop_toBottomOf="@id/minus" />
 
 
     <Button
@@ -212,14 +225,13 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/buttonPoint"
-        app:layout_constraintTop_toBottomOf="@id/multiply"/>
+        app:layout_constraintTop_toBottomOf="@id/multiply" />
 
     <Button
-        android:id="@+id/calc"
+        android:id="@+id/calculate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/margin_button"
-        android:layout_marginTop="163dp"
         android:text="@string/calc"
         android:textSize="@dimen/button_text"
         app:layout_constraintBottom_toBottomOf="parent"
