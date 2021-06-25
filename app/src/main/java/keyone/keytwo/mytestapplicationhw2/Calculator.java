@@ -1,6 +1,8 @@
 package keyone.keytwo.mytestapplicationhw2;
 
-public class Calculator {
+import java.io.Serializable;
+
+public class Calculator implements Serializable {
 
     private String arithmeticExpression;
 

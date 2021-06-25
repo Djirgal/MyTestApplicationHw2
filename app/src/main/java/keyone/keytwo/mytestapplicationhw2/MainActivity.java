@@ -181,7 +181,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onSaveInstanceState(@NonNull Bundle instanceState){
         super.onSaveInstanceState(instanceState);
         makeToast("onSaveInstanceState()");
-        instanceState.putSerializable(KEY, (Serializable) calculator);
+        instanceState.putSerializable(KEY, calculator);
     }
 
     @Override
